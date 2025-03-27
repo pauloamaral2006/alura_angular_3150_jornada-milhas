@@ -1,0 +1,26 @@
+.form-busca {
+  margin: 40px 0;
+  display: block;
+  .flex-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .input-container {
+    margin-bottom: -1.25em;
+  }
+  .mat-button-toggle-checked {
+    background-color: #f7f2fa;
+  }
+  h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .mat-mdc-form-field-has-icon-suffix .mat-mdc-text-field-wrapper {
+    padding-right: 0 !important;
+    border: 0.5px solid #000 !important;
+    border-radius: 10px !important;
+  }
+}
