@@ -25,3 +25,7 @@
 
 | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/9221969?v=4" width=115><br><sub>Vinicios Neves</sub>](https://github.com/viniciosneves) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/103528784?v=4" width=115><br><sub>Nayanne Batista</sub>](https://github.com/nayannelbatista) |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+
+## 💻 Screenshot
+
+<img loading="lazy" src="./src/assets/imagens/screenshot.png" style="width: 100%" />
