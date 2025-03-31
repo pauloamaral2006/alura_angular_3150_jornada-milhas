@@ -13,6 +13,14 @@
 - Descubrir como adicionar ícones usando o Angular Material
 - Explorar a ampla variedade de componentes disponíveis no Angular Material, incluindo botões, barras de ferramentas, cards e muito mais
 
+### Angular: componentização, formulários e interação com APIs
+
+- Criar componentes utilizando Angular Material
+- Utilizar variáveis de ambiente em aplicações Angular
+- Controlar e validar formulários em Angular utilizando serviços
+- Manipular dados de APIs utilizando Angular
+- Utilizar técnicas avançadas do Angular, como o providedIn e o cache com shareReplay
+
 ## 🖥️ Tecnologias
 
 <div>
