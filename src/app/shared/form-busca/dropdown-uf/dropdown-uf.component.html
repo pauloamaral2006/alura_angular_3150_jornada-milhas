@@ -10,7 +10,7 @@
   <mat-icon matSuffix>search</mat-icon>
   <mat-autocomplete #auto="matAutocomplete">
     @for (option of filteredOptions | async; track option) {
-    <mat-option [value]="option">{{ option.nome }}</mat-option>
+    <mat-option [value]="option.nome">{{ option.nome }}</mat-option>
     }
   </mat-autocomplete>
 </mat-form-field>

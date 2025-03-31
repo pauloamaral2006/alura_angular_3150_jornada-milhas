@@ -3,6 +3,7 @@ import { UnidadeFederativaService } from '../../../core/services/unidade-federat
 import { UnidadeFederativa } from '../../../core/types/types';
 import { FormControl } from '@angular/forms';
 import { map, Observable, startWith } from 'rxjs';
+import { FormBuscaService } from '../../../core/services/form-busca.service';
 
 @Component({
   selector: 'app-dropdown-uf',
@@ -13,20 +14,34 @@ import { map, Observable, startWith } from 'rxjs';
 export class DropdownUfComponent implements OnInit {
   @Input() label!: string;
   @Input() iconePrefixo!: string;
-  control = new FormControl('');
+  control!: FormControl;
 
   unidadesFederativas: UnidadeFederativa[] = [];
   filteredOptions!: Observable<UnidadeFederativa[]>;
 
-  constructor(private unidadeFederativaService: UnidadeFederativaService) {}
+  constructor(
+    private unidadeFederativaService: UnidadeFederativaService,
+    private formBuscaService: FormBuscaService
+  ) {}
 
   ngOnInit() {
+
     this.unidadeFederativaService.listar().subscribe((dados) => {
       this.unidadesFederativas = dados;
     });
+
+    /* Início  */
+    /* Essa parte do código foi necessário para realizar a vinculação correta do input do html com a propriedde no FormBuscaService, pois o mesmo campo é utilizado para referenciar dois campos  distintos (origem e destino)*/
+
+    this.control = this.formBuscaService.obterControle(
+      this.label.toLowerCase()
+    );
+    /* Fim */
     this.filteredOptions = this.control.valueChanges.pipe(
       startWith(this.control.value),
-      map((value) => this._filter(value || ''))
+      map((value) => {
+        return this._filter(value as string);
+      })
     );
   }
 

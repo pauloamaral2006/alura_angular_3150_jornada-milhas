@@ -11,13 +11,13 @@ export class FormBuscaService {
   formBusca: FormGroup;
   constructor(private dialog: MatDialog) {
     this.formBusca = new FormGroup({
-      someteIda: new FormControl(false),
+      somenteIda: new FormControl(false),
       origem: new FormControl(''),
       destino: new FormControl(''),
       tipo: new FormControl('Econômica'),
-      adultos: new FormControl(1),
+      adultos: new FormControl(3),
       criancas: new FormControl(0),
-      bebes: new FormControl(0),
+      bebes: new FormControl(1),
     });
   }
 
@@ -62,5 +62,15 @@ export class FormBuscaService {
         tipo,
       });
     }
+  }
+
+  trocarOrigemDestino(): void {
+    const origem = this.formBusca.get('origem')?.value;
+    const destino = this.formBusca.get('destino')?.value;
+
+    this.formBusca.patchValue({
+      origem: destino,
+      destino: origem,
+    });
   }
 }
