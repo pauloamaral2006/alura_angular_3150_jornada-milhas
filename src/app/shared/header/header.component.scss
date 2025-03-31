@@ -13,11 +13,25 @@
     padding: 0 256px;
   }
 
-  .mat-mdc-outlined-button:not(:disabled) {
-    border-color: white;
+  .links-toolbar > * {
+    margin-right: 20px;
   }
 
-  .login {
+  .links-toolbar > *:first-child {
+    margin-right: 0;
+  }
+
+  .links-toolbar > button:nth-child(1),
+  .links-toolbar > button:nth-child(2) {
     color: white;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  .mat-mdc-outlined-button:not(:disabled) {
+    border-color: #673ab7;
+    color: #673ab7;
   }
 }
