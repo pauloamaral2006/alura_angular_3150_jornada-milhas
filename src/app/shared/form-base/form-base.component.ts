@@ -22,8 +22,11 @@ export class FormBaseComponent implements OnInit {
     Validators.required
   );
 
-  @Input() perfilComponent!: boolean;
+  @Input() perfilComponent = false;
+  @Input() titulo: string = 'Crie sua conta';
+  @Input() textoBotao: string = 'CRIAR MINHA CONTA';
   @Output() acaoClique: EventEmitter<any> = new EventEmitter<any>();
+  @Output() acaoSair: EventEmitter<any> = new EventEmitter<any>();
   constructor(
     private formBuilder: FormBuilder,
     private formularioService: FormularioService
@@ -58,11 +61,21 @@ export class FormBaseComponent implements OnInit {
       ],
       aceitarTermos: [null, [Validators.requiredTrue]],
     });
-
+    if (this.perfilComponent) {
+      this.cadastroForm.get('aceitarTermos')?.setValidators(null);
+    } else {
+      this.cadastroForm
+        .get('aceitarTermos')
+        ?.setValidators([Validators.requiredTrue]);
+    }
+    this.cadastroForm.get('aceitarTermos')?.updateValueAndValidity();
     this.formularioService.setCadastro(this.cadastroForm);
   }
 
   executarAcao() {
     this.acaoClique.emit();
+  }
+  deslogar() {
+    this.acaoSair.emit();
   }
 }

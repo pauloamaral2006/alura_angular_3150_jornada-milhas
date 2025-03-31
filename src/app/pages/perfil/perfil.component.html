@@ -1,0 +1,12 @@
+<app-banner
+  src="assets/imagens/banner-login.png"
+  alt="Banner da tela de cadastro"
+>
+</app-banner>
+<app-form-base
+  [titulo]="titulo + nome"
+  [textoBotao]="textoBotao"
+  [perfilComponent]="perfilComponent"
+  (acaoSair)="deslogar()"
+  (acaoClique)="atualizar()"
+></app-form-base>
