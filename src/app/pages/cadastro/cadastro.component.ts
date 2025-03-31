@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormularioService } from '../../core/services/formulario.service';
 import { CadastrooService } from '../../core/services/cadastroo.service';
 import { PessoaUsuaria } from '../../core/types/types';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro',
@@ -14,7 +15,8 @@ export class CadastroComponent {
 
   constructor(
     private formularioService: FormularioService,
-    private cadastroService: CadastrooService
+    private cadastroService: CadastrooService,
+    private router: Router
   ) {}
   cadastrar() {
     const formCadastro = this.formularioService.getCadastro();
@@ -24,6 +26,7 @@ export class CadastroComponent {
       this.cadastroService.cadastrar(novoCadastro).subscribe({
         next: (value) => {
           console.log('Cadastro realizado com sucesso.', value);
+          this.router.navigate(['/login']);
         },
         error: (err) => {
           console.log('Erro ao realizar cadastro.', err);
