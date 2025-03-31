@@ -21,6 +21,14 @@
 - Manipular dados de APIs utilizando Angular
 - Utilizar técnicas avançadas do Angular, como o providedIn e o cache com shareReplay
 
+### Angular: trabalhando com Tokens JWT na autenticação e cadastro
+
+- Entender como funciona o processo de autenticação do usuário
+- Conhecer o token JWT para a autorização de usuários
+- Realizar o controle de sessão dos usuários da sua aplicação web
+- Implementar o login e cadastro de sua aplicação
+- Aprender a proteger as rotas com a Guarda de Rotas Funcional
+
 ## 🖥️ Tecnologias
 
 <div>
@@ -31,8 +39,8 @@
 
 ## 🧑‍🏫 Instrutor(es)
 
-| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/9221969?v=4" width=115><br><sub>Vinicios Neves</sub>](https://github.com/viniciosneves) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/103528784?v=4" width=115><br><sub>Nayanne Batista</sub>](https://github.com/nayannelbatista) |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/9221969?v=4" width=115><br><sub>Vinicios Neves</sub>](https://github.com/viniciosneves) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/103528784?v=4" width=115><br><sub>Nayanne Batista</sub>](https://github.com/nayannelbatista) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/51094173?v=4" width=115><br><sub>Rafaela Petelin Silvério</sub>](https://github.com/rafaelasilverio) |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
 ## 💻 Screenshot
 
