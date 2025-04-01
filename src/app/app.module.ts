@@ -7,22 +7,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { MaterialModule } from './core/material/material.module';
-import { AutenticacaoModule } from './autenticacao/autenticacao.module';
 import { AutenticacaoInterceptor } from './autenticacao/autentificacao.interceptor';
 import { HomeModule } from './home/home.module';
-import { BuscaModule } from './busca/busca.module';
+import { ErroModule } from './core/erro/erro.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
     SharedModule,
     MaterialModule,
     HomeModule,
-    AutenticacaoModule,
-    BuscaModule,
+    ErroModule,
+    AppRoutingModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [

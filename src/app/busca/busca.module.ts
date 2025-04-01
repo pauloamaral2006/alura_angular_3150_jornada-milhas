@@ -12,6 +12,7 @@ import { FiltrosComplementaresComponent } from './filtros-complementares/filtros
 import { PassagemComponent } from './passagem/passagem.component';
 import { BuscaComponent } from './busca.component';
 import { CardPrecosComponent } from './card-precos/card-precos.component';
+import { BuscaRoutingModule } from './busca-routing.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { CardPrecosComponent } from './card-precos/card-precos.component';
     PassagemComponent,
     CardPrecosComponent,
   ],
-  imports: [CommonModule, MaterialModule, SharedModule, ReactiveFormsModule],
+  imports: [CommonModule, MaterialModule, SharedModule, ReactiveFormsModule, BuscaRoutingModule],
   exports: [
     BuscaComponent,
     ParadasComponent,

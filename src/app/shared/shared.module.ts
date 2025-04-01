@@ -16,6 +16,7 @@ import { DropdownUfComponent } from './dropdown-uf/dropdown-uf.component';
 import { SeletorPassageiroComponent } from './seletor-passageiro/seletor-passageiro.component';
 import { FormBaseComponent } from './form-base/form-base.component';
 import { MaterialModule } from '../core/material/material.module';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -32,7 +33,7 @@ import { MaterialModule } from '../core/material/material.module';
     SeletorPassageiroComponent,
     FormBaseComponent,
   ],
-  imports: [CommonModule, MaterialModule, ReactiveFormsModule],
+  imports: [CommonModule, MaterialModule, ReactiveFormsModule, RouterModule],
   exports: [
     HeaderComponent,
     BannerComponent,
