@@ -29,6 +29,14 @@
 - Implementar o login e cadastro de sua aplicação
 - Aprender a proteger as rotas com a Guarda de Rotas Funcional
 
+### Angular: buscando, filtrando e exibindo dados de uma API
+
+- Criar uma aplicação de busca de passagens aéreas utilizando Angular e Material Angular
+- Utilizar dados de uma API externa para buscar passagens aéreas
+- Filtrar as passagens por número de conexões, companhias e preço
+- Aplicar o ciclo de vida do Angular para melhorar a aplicação
+- Desenvolver programação reativa utilizando RxJS e Angular
+
 ## 🖥️ Tecnologias
 
 <div>
@@ -39,8 +47,8 @@
 
 ## 🧑‍🏫 Instrutor(es)
 
-| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/9221969?v=4" width=115><br><sub>Vinicios Neves</sub>](https://github.com/viniciosneves) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/103528784?v=4" width=115><br><sub>Nayanne Batista</sub>](https://github.com/nayannelbatista) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/51094173?v=4" width=115><br><sub>Rafaela Petelin Silvério</sub>](https://github.com/rafaelasilverio) |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/9221969?v=4" width=115><br><sub>Vinicios Neves</sub>](https://github.com/viniciosneves) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/103528784?v=4" width=115><br><sub>Nayanne Batista</sub>](https://github.com/nayannelbatista) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/51094173?v=4" width=115><br><sub>Rafaela Petelin Silvério</sub>](https://github.com/rafaelasilverio) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/80489469?v=4" width=115><br><sub>Diego Carlos</sub>](https://github.com/diegocgayoso) |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ## 💻 Screenshot
 
