@@ -9,6 +9,27 @@
         ></app-filtros-complementares>
       </aside>
       <div class="passagens">
+        <div class="destaques">
+          <app-card variant="secondary">
+            <app-card-precos
+              destacadaPor="Menor preço"
+              [passagem]="destaques?.maisBarata"
+            />
+          </app-card>
+          <app-card variant="primary">
+            <app-card-precos
+              destacadaPor="Recomendado"
+              [passagem]="destaques?.sugerida"
+            />
+          </app-card>
+          <app-card variant="secondary">
+            <app-card-precos
+              destacadaPor="Menor tempo"
+              [passagem]="destaques?.maisRapida"
+            />
+          </app-card>
+        </div>
+
         <app-passagem
           *ngFor="let passagem of passagens"
           [passagem]="passagem"
