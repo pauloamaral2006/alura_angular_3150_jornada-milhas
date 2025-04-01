@@ -1,0 +1,12 @@
+.card {
+  padding: 24px;
+}
+.card.primary {
+  background: #fef7ff;
+  border: 1px solid #cacad0;
+  border-radius: 12px;
+}
+.card.secondary {
+  background: #f5f5f5;
+  border-radius: 16px;
+}/*# sourceMappingURL=card.component.css.map */

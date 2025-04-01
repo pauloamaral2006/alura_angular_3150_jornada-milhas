@@ -10,6 +10,7 @@ import { MaterialModule } from './core/material/material.module';
 import { AutenticacaoInterceptor } from './autenticacao/autentificacao.interceptor';
 import { HomeModule } from './home/home.module';
 import { ErroModule } from './core/erro/erro.module';
+import { ErrosInterceptor } from './core/erro/erros.interceptor';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -27,6 +28,11 @@ import { ErroModule } from './core/erro/erro.module';
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AutenticacaoInterceptor,
+      multi: true,
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ErrosInterceptor,
       multi: true,
     },
   ],
