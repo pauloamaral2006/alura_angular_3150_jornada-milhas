@@ -3,10 +3,10 @@ import { Component, Input, OnInit } from '@angular/core';
 import { UnidadeFederativaService } from '../../core/services/unidade-federativa.service';
 import { FormControl } from '@angular/forms';
 import { map, Observable, startWith } from 'rxjs';
-import { FormBuscaService } from '../../core/services/form-busca.service';
 
 @Component({
   selector: 'app-dropdown-uf',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
   templateUrl: './dropdown-uf.component.html',
   styleUrl: './dropdown-uf.component.scss',

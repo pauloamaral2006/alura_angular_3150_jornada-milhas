@@ -4,6 +4,7 @@ import { PassagensService } from '../services/passagens.service';
 
 @Component({
   selector: 'app-filtros-complementares',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
   templateUrl: './filtros-complementares.component.html',
   styleUrl: './filtros-complementares.component.scss',

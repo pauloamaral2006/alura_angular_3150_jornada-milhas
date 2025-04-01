@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { FormBuscaService } from '../../../core/services/form-busca.service';
 import { Companhia } from '../../../core/types/types';
@@ -6,11 +6,12 @@ import { CompanhiasService } from '../../services/companhias.service';
 
 @Component({
   selector: 'app-companhias',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
   templateUrl: './companhias.component.html',
   styleUrl: './companhias.component.scss',
 })
-export class CompanhiasComponent {
+export class CompanhiasComponent implements OnInit {
   companhias: Companhia[] = [];
   selecionadas: Companhia[] = [];
 

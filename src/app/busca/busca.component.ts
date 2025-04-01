@@ -1,4 +1,3 @@
-
 import { Component, OnInit } from '@angular/core';
 import { take } from 'rxjs';
 import { DadosBusca, Destaques, Passagem } from '../core/types/types';
@@ -7,6 +6,7 @@ import { FormBuscaService } from '../core/services/form-busca.service';
 
 @Component({
   selector: 'app-busca',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
   templateUrl: './busca.component.html',
   styleUrl: './busca.component.scss',

@@ -5,6 +5,7 @@ import { AutenticacaoService } from '../services/autenticacao.service';
 
 @Component({
   selector: 'app-login',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss',

@@ -11,6 +11,7 @@ import { FormValidations } from '../form-validations';
 
 @Component({
   selector: 'app-form-base',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
   templateUrl: './form-base.component.html',
   styleUrl: './form-base.component.scss',
@@ -23,10 +24,10 @@ export class FormBaseComponent implements OnInit {
   );
 
   @Input() perfilComponent = false;
-  @Input() titulo: string = 'Crie sua conta';
-  @Input() textoBotao: string = 'CRIAR MINHA CONTA';
-  @Output() acaoClique: EventEmitter<any> = new EventEmitter<any>();
-  @Output() acaoSair: EventEmitter<any> = new EventEmitter<any>();
+  @Input() titulo = 'Crie sua conta';
+  @Input() textoBotao = 'CRIAR MINHA CONTA';
+  @Output() acaoClique: EventEmitter<void> = new EventEmitter<void>();
+  @Output() acaoSair: EventEmitter<void> = new EventEmitter<void>();
   constructor(
     private formBuilder: FormBuilder,
     private formularioService: FormularioService

@@ -1,20 +1,24 @@
-
 import { Observable, take } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment';
 import { HttpClient } from '@angular/common/http';
-import { DadosBusca, Destaques, Passagem, Resultado } from '../../core/types/types';
+import {
+  DadosBusca,
+  Destaques,
+  Passagem,
+  Resultado,
+} from '../../core/types/types';
 
 @Injectable({
   providedIn: 'root',
 })
 export class PassagensService {
   private apiUrl: string = environment.apiUrl;
-  precoMin: number = 0;
-  precoMax: number = 0;
+  precoMin = 0;
+  precoMax = 0;
   constructor(private httpClient: HttpClient) {}
 
-  getPassagens(search: any): Observable<Resultado> {
+  getPassagens(search: DadosBusca): Observable<Resultado> {
     const params = this.converterParametrosParaString(search);
     const obs = this.httpClient.get<Resultado>(
       `${this.apiUrl}/passagem/search?` + params
@@ -44,22 +48,22 @@ export class PassagensService {
     if (!passagem.length) {
       return undefined;
     }
-    let ordenadoPorTempo = [...passagem].sort(
+    const ordenadoPorTempo = [...passagem].sort(
       (a, b) => a.tempoVoo - b.tempoVoo
     );
-    let ordenadoPorPreco = [...passagem].sort((a, b) => a.total - b.total);
+    const ordenadoPorPreco = [...passagem].sort((a, b) => a.total - b.total);
 
-    let maisRapida = ordenadoPorTempo[0];
-    let maisBarata = ordenadoPorPreco[0];
+    const maisRapida = ordenadoPorTempo[0];
+    const maisBarata = ordenadoPorPreco[0];
 
-    let ordenadoPorMedia = [...passagem].sort((a, b) => {
-      let pontuacaoA =
+    const ordenadoPorMedia = [...passagem].sort((a, b) => {
+      const pontuacaoA =
         (a.tempoVoo / maisBarata.tempoVoo + a.total / maisBarata.total) / 2;
-      let pontuacaoB =
+      const pontuacaoB =
         (b.tempoVoo / maisBarata.total + b.total / maisBarata.total) / 2;
       return pontuacaoA - pontuacaoB;
     });
-    let sugerida = ordenadoPorMedia[0];
+    const sugerida = ordenadoPorMedia[0];
 
     return { maisRapida, maisBarata, sugerida };
   }

@@ -6,6 +6,7 @@ import { UserService } from '../../autenticacao/services/user.service';
 
 @Component({
   selector: 'app-header',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',

@@ -4,6 +4,7 @@ import { PromocaoService } from '../../services/promocao.service';
 
 @Component({
   selector: 'app-promocoes',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
   templateUrl: './promocoes.component.html',
   styleUrl: './promocoes.component.scss',

@@ -8,6 +8,7 @@ interface OpcoesDeParada {
 }
 @Component({
   selector: 'app-paradas',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
   templateUrl: './paradas.component.html',
   styleUrl: './paradas.component.scss',

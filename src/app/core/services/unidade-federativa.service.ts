@@ -21,6 +21,6 @@ export class UnidadeFederativaService {
   }
 
   private requestEstados(): Observable<UnidadeFederativa[]> {
-    return this.httpClient.get<UnidadeFederativa[]>(`${this.apiUrl}/estad`);
+    return this.httpClient.get<UnidadeFederativa[]>(`${this.apiUrl}/estados`);
   }
 }

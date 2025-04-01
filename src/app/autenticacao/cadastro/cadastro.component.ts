@@ -6,12 +6,13 @@ import { CadastrooService } from '../services/cadastroo.service';
 
 @Component({
   selector: 'app-cadastro',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
   templateUrl: './cadastro.component.html',
   styleUrl: './cadastro.component.scss',
 })
 export class CadastroComponent {
-  perfilComponent: boolean = false;
+  perfilComponent = false;
 
   constructor(
     private formularioService: FormularioService,

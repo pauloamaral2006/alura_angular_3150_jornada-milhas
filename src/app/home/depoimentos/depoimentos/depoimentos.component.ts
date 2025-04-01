@@ -4,6 +4,7 @@ import { DepoimentoService } from '../../services/depoimento.service';
 
 @Component({
   selector: 'app-depoimentos',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
   templateUrl: './depoimentos.component.html',
   styleUrl: './depoimentos.component.scss',

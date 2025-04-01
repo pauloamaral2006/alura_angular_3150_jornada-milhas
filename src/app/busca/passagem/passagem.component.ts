@@ -3,6 +3,7 @@ import { Passagem } from '../../core/types/types';
 
 @Component({
   selector: 'app-passagem',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
   templateUrl: './passagem.component.html',
   styleUrl: './passagem.component.scss',

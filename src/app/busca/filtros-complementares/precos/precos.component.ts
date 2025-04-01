@@ -5,6 +5,7 @@ import { FormBuscaService } from '../../../core/services/form-busca.service';
 
 @Component({
   selector: 'app-precos',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
   templateUrl: './precos.component.html',
   styleUrl: './precos.component.scss',

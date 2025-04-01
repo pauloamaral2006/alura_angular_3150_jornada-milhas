@@ -1,4 +1,3 @@
-
 import { TokenService } from '../services/token.service';
 import { Component, OnInit } from '@angular/core';
 import { PessoaUsuaria } from '../../core/types/types';
@@ -10,6 +9,7 @@ import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-perfil',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
   templateUrl: './perfil.component.html',
   styleUrl: './perfil.component.scss',
@@ -21,7 +21,7 @@ export class PerfilComponent implements OnInit {
 
   nome = '';
   cadastro!: PessoaUsuaria;
-  form!: FormGroup<any> | null;
+  form!: FormGroup | null;
 
   constructor(
     private tokenService: TokenService,

@@ -1,8 +1,9 @@
-import { Component, EventEmitter, Output, output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormBuscaService } from '../../core/services/form-busca.service';
 
 @Component({
   selector: 'app-form-busca',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
   templateUrl: './form-busca.component.html',
   styleUrl: './form-busca.component.scss',

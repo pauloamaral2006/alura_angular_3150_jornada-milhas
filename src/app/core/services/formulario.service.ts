@@ -6,7 +6,6 @@ import { FormGroup } from '@angular/forms';
 })
 export class FormularioService {
   cadastroForm: FormGroup | null = null;
-  constructor() {}
 
   getCadastro(): FormGroup | null {
     return this.cadastroForm;

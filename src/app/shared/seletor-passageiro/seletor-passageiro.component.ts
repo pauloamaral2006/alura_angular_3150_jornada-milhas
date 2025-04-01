@@ -1,8 +1,9 @@
-import { Component, forwardRef, Input, input } from '@angular/core';
+import { Component, forwardRef, Input } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
   selector: 'app-seletor-passageiro',
+  // eslint-disable-next-line @angular-eslint/prefer-standalone
   standalone: false,
   templateUrl: './seletor-passageiro.component.html',
   styleUrl: './seletor-passageiro.component.scss',
@@ -15,17 +16,20 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
   ],
 })
 export class SeletorPassageiroComponent implements ControlValueAccessor {
-  @Input() titulo: string = '';
-  @Input() subTitulo: string = '';
+  @Input() titulo = '';
+  @Input() subTitulo = '';
 
-  value: number = 0;
+  value = 0;
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-empty-function
   onChange = (val: number) => {};
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   onTouche = () => {};
 
   writeValue(val: number): void {
     this.value = val;
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   registerOnChange(fn: any): void {
     this.onChange = fn;
   }
@@ -33,8 +37,6 @@ export class SeletorPassageiroComponent implements ControlValueAccessor {
   registerOnTouched(fn: () => void): void {
     this.onTouche = fn;
   }
-
-  setDisabledState(isDisabled: boolean): void {}
 
   incrementar() {
     this.value += 1;
