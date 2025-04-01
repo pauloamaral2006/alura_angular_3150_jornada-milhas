@@ -37,6 +37,14 @@
 - Aplicar o ciclo de vida do Angular para melhorar a aplicação
 - Desenvolver programação reativa utilizando RxJS e Angular
 
+### Angular: boas práticas de desenvolvimento com Modularização, Lazy Loading e Interceptors
+
+- Otimizar seu código com eficiência, aplicando técnicas de modularização
+- Melhorar o desempenho utilizando o lazy loading
+- Criar interceptors personalizados para manipulação de requisições HTTP
+- Aplicar estratégias para gerenciar erros e aprimorar a experiência de uso da aplicação
+- Manter seu código Angular limpo e consistente com o Eslint
+
 ## 🖥️ Tecnologias
 
 <div>
@@ -52,4 +60,9 @@
 
 ## 💻 Screenshot
 
+<div align="center">
+
 <img loading="lazy" src="./src/assets/imagens/screenshot.png" style="width: 100%" />
+<img loading="lazy" src="./src/assets/imagens/screenshot-2.png" style="width: 100%" />
+
+</div>
