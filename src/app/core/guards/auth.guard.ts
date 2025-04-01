@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 export const authGuard = () => {
   const userService = inject(UserService);
   const router = inject(Router);
-  return true;
+
   if (userService.estaLogado()) {
     return true;
   } else {

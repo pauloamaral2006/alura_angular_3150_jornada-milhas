@@ -28,7 +28,6 @@ const routes: Routes = [
   {
     path: 'busca',
     component: BuscaComponent,
-    canActivate: [authGuard],
   },
 ];
 

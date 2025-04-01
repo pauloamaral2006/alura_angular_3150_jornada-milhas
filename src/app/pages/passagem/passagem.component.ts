@@ -8,5 +8,6 @@ import { Passagem } from '../../core/types/types';
   styleUrl: './passagem.component.scss',
 })
 export class PassagemComponent {
+  @Input() textoIdaVolta!: string;
   @Input() passagem!: Passagem;
 }
