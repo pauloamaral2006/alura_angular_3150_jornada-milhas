@@ -42,7 +42,12 @@ import { PerfilComponent } from './pages/perfil/perfil.component';
 import { AutenticacaoInterceptor } from './core/interceptors/autentificacao.interceptor';
 import { BuscaComponent } from './pages/busca/busca.component';
 import { PassagemComponent } from './pages/passagem/passagem.component';
-
+import { FiltrosComplementaresComponent } from './shared/form-busca/filtros-complementares/filtros-complementares.component';
+import { LabelComponent } from './shared/form-busca/filtros-complementares/label/label.component';
+import { CompanhiasComponent } from './shared/form-busca/filtros-complementares/companhias/companhias.component';
+import { ParadasComponent } from './shared/form-busca/filtros-complementares/paradas/paradas.component';
+import { PrecosComponent } from './shared/form-busca/filtros-complementares/precos/precos.component';
+import { MatSliderModule } from '@angular/material/slider';
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,6 +72,11 @@ import { PassagemComponent } from './pages/passagem/passagem.component';
     PerfilComponent,
     BuscaComponent,
     PassagemComponent,
+    FiltrosComplementaresComponent,
+    LabelComponent,
+    CompanhiasComponent,
+    ParadasComponent,
+    PrecosComponent,
   ],
   imports: [
     BrowserModule,
@@ -88,6 +98,7 @@ import { PassagemComponent } from './pages/passagem/passagem.component';
     MatRadioModule,
     MatDividerModule,
     MatCheckboxModule,
+    MatSliderModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
